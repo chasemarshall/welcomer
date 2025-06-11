@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "welcomer",
+	"version": "${version}",
+	"name": "welcomer",
+	"description": "Automatically welcomes players when they hoin!",
+	"authors": [
+		"milo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/welcomer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xyz.withmilo.welcomer.Welcomer"
+		],
+		"fabric-datagen": [
+			"xyz.withmilo.welcomer.WelcomerDataGenerator"
+		],
+		"client": [
+			"xyz.withmilo.welcomer.WelcomerClient"
+		]
+	},
+	"mixins": [
+		"welcomer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
