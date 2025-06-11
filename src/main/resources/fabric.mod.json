@@ -3,7 +3,7 @@
 	"id": "welcomer",
 	"version": "${version}",
 	"name": "welcomer",
-	"description": "Automatically welcomes players when they hoin!",
+	"description": "Automatically welcomes players when they join!",
 	"authors": [
 		"milo"
 	],
@@ -22,6 +22,9 @@
 			"xyz.withmilo.welcomer.WelcomerDataGenerator"
 		],
 		"client": [
+			"xyz.withmilo.welcomer.WelcomerClient"
+		],
+		"command": [
 			"xyz.withmilo.welcomer.WelcomerClient"
 		]
 	},
